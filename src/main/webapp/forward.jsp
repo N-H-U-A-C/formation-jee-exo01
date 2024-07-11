@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Redirection</title>
+  <title>JSP - Forward</title>
 </head>
 <body>
-<h1><%= "Ceci est une redirection !" %></h1>
+<h1><%= "Ceci est un forward !" %></h1>
 <br/>
 <a href="index.jsp">Retour à l'index</a>
 </body>

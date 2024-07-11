@@ -10,7 +10,7 @@
 <div>
   <a href="text">Tester la servlet texte brut</a>
   <a href="html">Tester la servlet HTML</a>
-  <a href="redirection">Tester la servlet redirection</a>
+  <a href="forward">Tester la servlet redirection</a>
 </div>
 </body>
 </html>

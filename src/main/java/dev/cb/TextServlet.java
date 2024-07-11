@@ -16,6 +16,7 @@ public class TextServlet extends HttpServlet {
         message = "Ceci est du texte brut !";
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/plain");
 

@@ -8,14 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "redirectionServlet", value = "/redirection")
-public class RedirectionServlet extends HttpServlet {
+@WebServlet(name = "forwardServlet", value = "/forward")
+public class ForwardServlet extends HttpServlet {
 
     public void init() {
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        getServletContext().getRequestDispatcher("/redirection.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/forward.jsp").forward(request, response);
     }
 
     public void destroy() {

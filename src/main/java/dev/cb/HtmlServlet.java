@@ -16,6 +16,7 @@ public class HtmlServlet extends HttpServlet {
         message = "Ceci est de l'HTML !";
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
