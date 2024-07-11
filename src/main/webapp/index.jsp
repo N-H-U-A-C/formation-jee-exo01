@@ -13,6 +13,7 @@
   <a href="forward">Tester la servlet forward</a>
   <a href="page1">Tester la servlet page1</a>
   <a href="page2">Tester la servlet page2</a>
+  <a href="exo03">Tester l'exo 03</a>
 </div>
 </body>
 </html>

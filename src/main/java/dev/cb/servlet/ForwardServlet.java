@@ -1,4 +1,4 @@
-package dev.cb;
+package dev.cb.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

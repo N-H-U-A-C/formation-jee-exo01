@@ -1,4 +1,4 @@
-package dev.cb;
+package dev.cb.servlet;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,22 +8,20 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "htmlServlet", value = "/html")
-public class HtmlServlet extends HttpServlet {
+@WebServlet(name = "textServlet", value = "/text")
+public class TextServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Ceci est de l'HTML !";
+        message = "Ceci est du texte brut !";
     }
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/plain");
 
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<p>" + message + "</p>");
-        out.println("</body></html>");
+        out.println(message);
     }
 
     public void destroy() {
